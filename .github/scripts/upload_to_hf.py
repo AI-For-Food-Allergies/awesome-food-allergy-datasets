@@ -14,7 +14,7 @@ from pathlib import Path
 def main():
     # Read configuration strictly from environment variables
     token = os.getenv('HF_TOKEN')
-    repo_id = 'hugging-science/awesome-food-allergy-datasets'
+    repo_id = 'abanand34/test-dataset-ai-allergies'
     dataset_file = Path('drug_design/datasets_drug_design.md')
 
     if not token:

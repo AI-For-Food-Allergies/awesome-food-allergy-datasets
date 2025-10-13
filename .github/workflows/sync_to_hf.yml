@@ -23,4 +23,4 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python upload_to_hf.py
+          python .github/scripts/upload_to_hf.py
