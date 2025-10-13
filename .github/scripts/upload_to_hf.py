@@ -33,7 +33,7 @@ def main():
 
     print(f'Uploading dataset file {dataset_file} to {repo_id} as dataset...')
     try:
-        api.upload_file(path_or_fileobj=dataset_file, repo_id=repo_id, repo_type='dataset', path_in_repo='.')
+        api.upload_file(path_or_fileobj=dataset_file, repo_id=repo_id, repo_type='dataset')
     except Exception as e:
         print(f'ERROR: upload failed: {e}', file=sys.stderr)
         return 5
