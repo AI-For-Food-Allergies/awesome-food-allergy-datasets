@@ -15,7 +15,7 @@ def main():
     # Read configuration strictly from environment variables
     token = os.getenv('HF_TOKEN')
     repo_id = 'abanand34/test-dataset-ai-allergies'
-    dataset_file = Path('drug_design/datasets_drug_design.md')
+    dataset_file = Path('README.md')
 
     if not token:
         print('ERROR: HF_TOKEN not provided in environment', file=sys.stderr)
