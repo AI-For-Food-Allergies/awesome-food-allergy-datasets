@@ -14,8 +14,8 @@ from pathlib import Path
 def main():
     # Read configuration strictly from environment variables
     token = os.getenv('HF_TOKEN')
-    repo_id = 'hugging-science/awesome-food-allergy-datasets'
-    dataset_file = Path('drug_design/datasets_drug_design.md')
+    repo_id = 'abanand34/test-dataset-ai-allergies'
+    dataset_file = Path('README.md')
 
     if not token:
         print('ERROR: HF_TOKEN not provided in environment', file=sys.stderr)
@@ -33,7 +33,7 @@ def main():
 
     print(f'Uploading dataset file {dataset_file} to {repo_id} as dataset...')
     try:
-        api.upload_file(path_or_fileobj=dataset_file, repo_id=repo_id, repo_type='dataset', path_in_repo='.')
+        api.upload_file(path_or_fileobj=dataset_file, repo_id=repo_id, repo_type='dataset', path_in_repo=dataset_file.parent.name + '/' + dataset_file.name)
     except Exception as e:
         print(f'ERROR: upload failed: {e}', file=sys.stderr)
         return 5
