@@ -18,8 +18,8 @@ def main():
     dataset_file = Path('README.md')
 
     if not token:
-        print('ERROR: HF_TOKEN not provided in environment', file=sys.stderr)
-        return 2
+        print('INFO: HF_TOKEN not provided in environment, skipping upload')
+        return 0
 
     if not dataset_file.exists():
         print(f'ERROR: dataset file does not exist: {dataset_file}', file=sys.stderr)
