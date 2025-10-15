@@ -1,6 +1,6 @@
 <!-- STATS_START -->
 
-# 🥜 Awesome Food Allergy Datasets
+# Awesome Food Allergy Datasets
 
 ![Datasets](https://img.shields.io/badge/datasets-72-blue)
 ![Open Source](https://img.shields.io/badge/open%20source-87%25-brightgreen)
